@@ -14,7 +14,7 @@ function Header() {
             <li>Other stuff</li>
             <button
               className="hover:bg-blue-50- rounded-full border-2 border-gray-800 px-8 py-2 text-gray-800 transition-all  hover:bg-gray-50"
-              onClick={() => console.log('login')}
+              onClick={login}
             >
               Login / signup
             </button>
