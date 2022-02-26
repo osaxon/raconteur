@@ -20,23 +20,12 @@ function Header(props) {
           <ul className="flex items-center gap-x-3">
             <li>Stuff</li>
             <li>Other stuff</li>
-
-            <>
-              <button
-                className="hover:bg-blue-50- rounded-full border-2 border-gray-800 px-8 py-2 text-gray-800 transition-all  hover:bg-gray-50"
-                onClick={login}
-              >
-                Login / Signup
-              </button>
-            </>
-            <>
-              <button
-                className="hover:bg-blue-50- rounded-full border-2 border-gray-800 px-8 py-2 text-gray-800 transition-all  hover:bg-gray-50"
-                onClick={logout}
-              >
-                Logout
-              </button>
-            </>
+            <button
+              className="hover:bg-blue-50- rounded-full border-2 border-gray-800 px-8 py-2 text-gray-800 transition-all  hover:bg-gray-50"
+              onClick={!user ? login : logout}
+            >
+              {!user ? 'Login / Signup' : 'Logout'}
+            </button>
           </ul>
         </div>
       </nav>
